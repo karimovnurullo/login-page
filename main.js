@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.alertFunction = void 0;
 var container = document.body;
 var modes = document.querySelectorAll('.mode');
 var modeIcon = document.querySelectorAll('.mode-icon');
@@ -40,3 +43,14 @@ function switchForm(hide, show) {
 }
 switchRegisterFormBtn.addEventListener('click', function () { return switchForm(loginForm, registerForm); });
 switchLoginFormBtn.addEventListener('click', function () { return switchForm(registerForm, loginForm); });
+function alertFunction(text, color) {
+    var alertElement = document.querySelector('.alert-element');
+    alertElement.style.display = "flex";
+    alertElement.textContent = text;
+    alertElement.style.background = color ? "green" : "red";
+    alertElement.style.color = color ? "#fff" : "#fff";
+    setTimeout(function () {
+        alertElement.style.display = "none";
+    }, 1500);
+}
+exports.alertFunction = alertFunction;
