@@ -7,6 +7,17 @@ const loginForm = document.querySelector<HTMLFormElement>('.login-form')!;
 const registerForm = document.querySelector<HTMLFormElement>('.sign-form')!;
 
 
+// =========================================
+
+const loginNumber = document.querySelector<HTMLInputElement>('.login-number')!;
+const loginPassword = document.querySelector<HTMLInputElement>('.login-password')!;
+const registerFirsname = document.querySelector<HTMLInputElement>('.sign-firsname')!;
+const registerLastname = document.querySelector<HTMLInputElement>('.sign-lastname')!;
+const registerNumber = document.querySelector<HTMLInputElement>('.sign-number')!;
+const registerPassword = document.querySelector<HTMLInputElement>('.sign-password')!;
+
+// =========================================
+
 
 (function darkMode() {
    if (localStorage.getItem('mode') === 'dark') {

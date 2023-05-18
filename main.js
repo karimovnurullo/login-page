@@ -5,6 +5,14 @@ var switchLoginFormBtn = document.querySelector('.login-btn');
 var switchRegisterFormBtn = document.querySelector('.create-btn');
 var loginForm = document.querySelector('.login-form');
 var registerForm = document.querySelector('.sign-form');
+// =========================================
+var loginNumber = document.querySelector('.login-number');
+var loginPassword = document.querySelector('.login-password');
+var registerFirsname = document.querySelector('.sign-firsname');
+var registerLastname = document.querySelector('.sign-lastname');
+var registerNumber = document.querySelector('.sign-number');
+var registerPassword = document.querySelector('.sign-password');
+// =========================================
 (function darkMode() {
     if (localStorage.getItem('mode') === 'dark') {
         container.classList.add('dark');
